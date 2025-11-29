@@ -12,6 +12,8 @@ public interface LocationRepository {
 
     Optional<Location> findByExternalId(Long externalId);
 
+    List<Location> findAll();
+
     Location save(Location location);
 
     List<Location> saveAll(List<Location> locations);

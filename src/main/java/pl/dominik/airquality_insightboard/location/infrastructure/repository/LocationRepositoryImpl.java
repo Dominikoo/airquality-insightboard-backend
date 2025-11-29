@@ -26,6 +26,14 @@ public class LocationRepositoryImpl implements LocationRepository {
     }
 
     @Override
+    public List<Location> findAll() {
+        return jpaRepository.findAll()
+                .stream()
+                .map(LocationJpaEntity::toDomain)
+                .toList();
+    }
+
+    @Override
     public Location save(Location location) {
         LocationJpaEntity entity = LocationJpaEntity.fromDomain(location);
         LocationJpaEntity saved = jpaRepository.save(entity);
