@@ -1,4 +1,4 @@
-package pl.dominik.airquality_insightboard.airquality.infrastructure;
+package pl.dominik.airquality_insightboard.airquality.infrastructure.client;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

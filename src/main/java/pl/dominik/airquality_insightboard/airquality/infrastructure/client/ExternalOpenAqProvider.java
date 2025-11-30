@@ -1,4 +1,4 @@
-package pl.dominik.airquality_insightboard.airquality.infrastructure;
+package pl.dominik.airquality_insightboard.airquality.infrastructure.client;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
